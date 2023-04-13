@@ -1,5 +1,6 @@
 > # PLUGIN NOT MAINTAINED anymore
-> If you want to takover the plugin, write me!
+>THIS IS JUST A FORK 
+i added tabulation and colors support. maybe in future will add more according to my needs.
 
 
 

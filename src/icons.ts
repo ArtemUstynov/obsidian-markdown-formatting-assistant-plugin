@@ -45,6 +45,8 @@ export const icons: Record<string, string> = {
   bulletList: pathToSvg(mdiIcons.mdiFormatListBulleted),
   numberList: pathToSvg(mdiIcons.mdiFormatListNumbered),
   checkList: pathToSvg(mdiIcons.mdiFormatListBulletedSquare),
+  tab: pathToSvg(mdiIcons.mdiKeyboardTab),
+  color: pathToSvg(mdiIcons.mdiBrush),
   viewIcon: pathToSvg(mdiIcons.mdiLanguageMarkdown),
   underline: pathToSvg(mdiIcons.mdiFormatUnderline),
   menu: pathToSvg(mdiIcons.mdiMenu),

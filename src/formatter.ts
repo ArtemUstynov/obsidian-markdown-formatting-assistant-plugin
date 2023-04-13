@@ -227,6 +227,26 @@ export const formatSettings = {
     enclose: false,
     objectType: 'formatterSetting',
   },
+  tab: {
+    des: 'tab',
+    icon: 'tab',
+    symbol: '$~~~~~$',
+    shift: 6,
+    selectionInput: 0,
+    newLine: false,
+    enclose: false,
+    objectType: 'formatterSetting',
+  },
+  color: {
+    des: 'color',
+    icon: 'color',
+    symbol: '<span style="color:red"></span>',
+    shift: 3,
+    selectionInput: 24,
+    newLine: false,
+    enclose: false,
+    objectType: 'formatterSetting',
+  },
 };
 
 export function iconFormatter(editor: Editor, item: formatterSetting) {
@@ -280,6 +300,7 @@ export function iconFormatter(editor: Editor, item: formatterSetting) {
         'image',
         'underline',
         'highlight',
+        'color',
       ].contains(item.des)
     ) {
       if (isSelection) {
@@ -336,7 +357,7 @@ export function iconFormatter(editor: Editor, item: formatterSetting) {
         editor.setCursor(curserStart.line, curserStart.ch + item.shift);
       }
     } else if (
-      ['blockquote', 'bullet_list', 'number_list', 'check_list'].contains(
+      ['blockquote', 'bullet_list', 'number_list', 'check_list','tab'].contains(
         item.des,
       )
     ) {

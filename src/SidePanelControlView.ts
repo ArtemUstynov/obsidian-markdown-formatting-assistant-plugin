@@ -514,6 +514,14 @@ export class SidePanelControlView extends ItemView {
     button = row.createDiv({ cls: 'nav-action-button' });
     addClickEvent(button, 'checkList');
     button.appendChild(svgToElement('checkList'));
+
+    button = row.createDiv({ cls: 'nav-action-button' });
+    addClickEvent(button, 'tab');
+    button.appendChild(svgToElement('tab'));
+
+    button = row.createDiv({ cls: 'nav-action-button' });
+    addClickEvent(button, 'color');
+    button.appendChild(svgToElement('color'));
   }
 
   private addColorBody(mainDiv: HTMLElement) {
